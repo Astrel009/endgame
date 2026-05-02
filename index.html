@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form>
+
+    <label>Ім'я:
+        <input type="text" name="name" placeholder="enter name" required>
+    </label>
+    <br><br>
+
+    <label>Email:
+        <input type="email" name="email" placeholder="enter login" required>
+    </label>
+    <br><br>
+
+    <label>Пароль:
+        <input type="password" name="password" required>
+    </label>
+    <br><br>
+
+    <label>Телефон:
+        <input type="tel" name="phone" placeholder="enter 0xx-xxx-xx-xx" required>
+    </label>
+    <br><br>
+
+    <label>Вік:
+        <input type="number" name="age" value="1" min="1">
+    </label>
+    <br><br>
+
+    <p>Стать:</p>
+    <label>
+        <input type="radio" name="gender" value="male"> Чоловік
+    </label>
+    <br>
+    <label>
+        <input type="radio" name="gender" value="female"> Жінка
+    </label>
+    <br><br>
+
+    <label>Країна:
+        <select name="country">
+            <option value="none">None</option>
+            <option value="ua">Україна</option>
+            <option value="es">Іспанія</option>
+            <option value="usa">США</option>
+        </select>
+    </label>
+    <br><br>
+
+    <p>Мова:</p>
+    <label>
+        <input type="checkbox" name="lang" value="en"> Англійська
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="lang" value="es"> Іспанська
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="lang" value="ua"> Українська
+    </label>
+    <br><br>
+
+    <label>Місто:
+        <input type="text" name="city" list="cities">
+    </label>
+
+    <datalist id="cities">
+        <option value="Київ">
+        <option value="Львів">
+        <option value="Одеса">
+        <option value="Харків">
+    </datalist>
+
+    <br><br>
+
+    <button type="submit">Надіслати</button>
+
+</form>
+
+</body>
+</html>
